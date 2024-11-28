@@ -29,11 +29,7 @@ Git().clone(repo_url, repo_dir)
 ### 3. Set Up the Virtual Environment (Optional but Recommended)
 #### It is recommended to use a virtual environment to manage your dependencies.
 ### 4. Running the Script
-#### To fetch the CPI data and calculate the inflation rates for the last four quarters (Q4 2023, Q1 2024, Q2 2024, Q3 2024), run the following command:
-```python
-python scripts/fetch_cpi.py
-```
-#### This will execute the code in scripts/fetch_cpi.py, which calls the fetch_cpi_data() function from the src/data_fetcher.py file. The result will be displayed in the terminal, showing the inflation rates for the specified quarters.
+#### To fetch the CPI data and calculate the inflation rates for the last four quarters (Q4 2023, Q1 2024, Q2 2024, Q3 2024), run the 'fetch_cpi.py' file in scripts folder. 'fetch_cpi.py' file calls a function named 'fetch_cpi_data()'in 'CPI_data_fetcher' file in src folder. The result will be displayed in the terminal, showing the inflation rates for the specified quarters.
 ### 5. Understanding the Code
 #### - Data Fetching: The code uses the pandas_datareader library to fetch the CPI data from the FRED database.
 #### - Quarterly Inflation Calculation: The data is resampled to quarterly data, and the inflation rates are calculated based on the year-over-year change in CPI.
@@ -69,4 +65,3 @@ phbs-qps-2024-Lu/
 2024-06-30     0.697987
 2024-09-30     0.304423
 ```
-
