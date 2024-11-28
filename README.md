@@ -5,21 +5,29 @@
 #### https://github.com/Lynn-Lu09/phbs-qps-2024-Lu
 ## Setup and Running the Code
 #### Follow these steps to set up the environment and run the code:
-### 1. Clone the Repository
-#### First, clone the repository to your local machine:
-```python
-git clone https://github.com/Lynn-Lu09/phbs-qps-2024-Lu
-cd phbs-qps-2024
-```
-### 2. Set Up the Virtual Environment (Optional but Recommended)
-#### It is recommended to use a virtual environment to manage your dependencies.
-### 3. Install Dependencies
+### 1. Install Dependencies
 #### Make sure that the required Python libraries are installed. You can install the necessary libraries by running:
 ```python
 pip install pandas_datareader
 pip install pandas
 pip install datetime
+pip install git
 ```
+### 2. Clone the Repository
+#### Clone the repository to your local machine:
+```python
+git clone https://github.com/Lynn-Lu09/phbs-qps-2024-Lu
+cd phbs-qps-2024
+```
+#### Or you can clone the repository through python:
+```python
+from git import Git
+repo_url = "https://github.com/Lynn-Lu09/phbs-qps-2024-Lu"
+repo_dir = "path/to/clone/repo"
+Git().clone(repo_url, repo_dir)
+```
+### 3. Set Up the Virtual Environment (Optional but Recommended)
+#### It is recommended to use a virtual environment to manage your dependencies.
 ### 4. Running the Script
 #### To fetch the CPI data and calculate the inflation rates for the last four quarters (Q4 2023, Q1 2024, Q2 2024, Q3 2024), run the following command:
 ```python
