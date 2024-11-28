@@ -1,4 +1,5 @@
 # PHBS-QPS-2024-Lu
+### 2401212426 Yanan Lu
 #### This repository contains the code for fetching the US CPI data and calculating the inflation rate for the last four quarters (Q4 2023, Q1 2024, Q2 2024, and Q3 2024) using Python. The data is fetched from the Federal Reserve Economic Data (FRED) API, and the inflation rates are calculated based on the CPI values.
 ## Repository URL
 #### https://github.com/Lynn-Lu09/phbs-qps-2024-Lu
